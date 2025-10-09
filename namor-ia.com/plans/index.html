@@ -2,36 +2,42 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Planos – namor-ia.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Planos &#8211; namor-ia.com</title>
   <meta name="robots" content="max-image-preview:large" />
 
-  <!-- Prefetch automático no hover/viewport (navegação mais rápida) -->
-  <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module" defer></script>
-
-  <!-- Preconnect/DNS Prefetch: reduz latência para CDNs externas -->
+  <!-- Preconnect / DNS Prefetch (acelera conexões) -->
   <link rel="preconnect" href="https://cdn.utmify.com.br" crossorigin>
   <link rel="dns-prefetch" href="//cdn.utmify.com.br">
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <link rel="dns-prefetch" href="//www.googletagmanager.com">
   <link rel="preconnect" href="https://s.w.org" crossorigin>
   <link rel="dns-prefetch" href="//s.w.org">
-  <link rel='dns-prefetch' href='//www.googletagmanager.com' />
 
-  <!-- UTMify Pixel (deixa como está, já async/defer) -->
+  <style>
+    img:is([sizes="auto" i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+    /* Suaviza imagens lazy */
+    img[loading="lazy"]{filter:blur(6px);transition:filter .35s ease}
+    img[loading="lazy"].loaded{filter:none}
+  </style>
+
+  <!-- UTMify -->
   <script>
     window.pixelId = "68cc007c8c77a6e5bbc2b5d0";
-    var a = document.createElement("script");
-    a.setAttribute("async", "");
-    a.setAttribute("defer", "");
-    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-    document.head.appendChild(a);
+    (function(){
+      var a=document.createElement("script");
+      a.async=true;a.defer=true;
+      a.src="https://cdn.utmify.com.br/scripts/pixel/pixel.js";
+      document.head.appendChild(a);
+    })();
   </script>
-  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          async defer></script>
 
-  <!-- WordPress/Elementor CSS (originais) -->
-  <style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+  <!-- WordPress/Elementor CSS -->
   <link rel='stylesheet' id='hello-elementor-css' href='../wp-content/themes/hello-elementor/assets/css/resetedb1.css?ver=3.4.4' media='all' />
   <link rel='stylesheet' id='hello-elementor-theme-style-css' href='../wp-content/themes/hello-elementor/assets/css/themeedb1.css?ver=3.4.4' media='all' />
   <link rel='stylesheet' id='hello-elementor-header-footer-css' href='../wp-content/themes/hello-elementor/assets/css/header-footeredb1.css?ver=3.4.4' media='all' />
@@ -50,57 +56,11 @@
   <link rel='stylesheet' id='elementor-icons-shared-0-css' href='../wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min52d5.css?ver=5.15.3' media='all' />
   <link rel='stylesheet' id='elementor-icons-fa-solid-css' href='../wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min52d5.css?ver=5.15.3' media='all' />
 
-  <!-- WP emoji + estilos globais (originais) -->
-  <script>
-    window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/namor-ia.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
-    /*! Auto-generated (mantido) */
-    !function(s,n){/* ...código original omitido por brevidade... */}((window,document),window._wpemojiSettings);
-  </script>
-  <style id='wp-emoji-styles-inline-css'>
-    img.wp-smiley, img.emoji { display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-0.1em!important;background:none!important;padding:0!important; }
-  </style>
-
-  <!-- Global styles (mantidos) -->
-  <style id='global-styles-inline-css'>/* ...(mantido do seu arquivo)... */</style>
-
-  <!-- Google Tag (unificado: evita duplicidade) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17064888792"></script>
-  <script defer>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-17064888792');
-    gtag("set","linker",{"domains":["namor-ia.com"]});
-  </script>
-
-  <!-- Speculation Rules (prefetch conservador já configurado por você) -->
-  <script type="speculationrules">
-  {
-    "prefetch":[
-      {
-        "source":"document",
-        "where":{
-          "and":[
-            {"href_matches":"\/*"},
-            {"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/hello-elementor\/*","\/*\\?(.+)"]}},
-            {"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},
-            {"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}
-          ]
-        },
-        "eagerness":"conservative"
-      }
-    ]
-  }
-  </script>
-
-  <!-- Prefetch explícito de rotas mais acessadas (ajuste conforme seu fluxo) -->
-  <link rel="prefetch" href="/create">
-  <link rel="prefetch" href="/generate-ai">
-  <link rel="prefetch" href="/plans">
-
-  <!-- Links/canônicos/feeds (mantidos) -->
+  <!-- Feeds / meta WP -->
+  <link rel="alternate" type="application/rss+xml" title="Feed para namor-ia.com »" href="https://namor-ia.com/feed/" />
+  <link rel="alternate" type="application/rss+xml" title="Feed de comentários para namor-ia.com »" href="https://namor-ia.com/comments/feed/" />
   <link rel="https://api.w.org/" href="https://namor-ia.com/wp-json/" />
-  <link rel="alternate" type="application/json" href="https://namor-ia.com/wp-json/wp/v2/pages/232" />
+  <link rel="alternate" title="JSON" type="application/json" href="https://namor-ia.com/wp-json/wp/v2/pages/232" />
   <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://namor-ia.com/xmlrpc.php?rsd" />
   <meta name="generator" content="WordPress 6.8.3" />
   <link rel="canonical" href="index.html" />
@@ -108,30 +68,87 @@
   <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://namor-ia.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnamor-ia.com%2Fplans%2F" />
   <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://namor-ia.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnamor-ia.com%2Fplans%2F&amp;format=xml" />
   <meta name="generator" content="Site Kit by Google 1.158.0" />
+  <meta name="generator" content="Elementor 3.30.3; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+
+  <!-- Emojis WP -->
+  <script>
+    window._wpemojiSettings={"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/namor-ia.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+    /*! Auto-generated (WP) */
+    !function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e;t.defer=!0;s.head.appendChild(t)}
+    "undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag;n.DOMReady=!1;n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}(window,document),window._wpemojiSettings);
+  </script>
+  <style id='wp-emoji-styles-inline-css'>
+    img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:none!important;padding:0!important}
+  </style>
+
+  <!-- Google Tags -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-5DH83588" id="google_gtagjs-js"></script>
+  <script id="google_gtagjs-js-after">
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("set","linker",{"domains":["namor-ia.com"]});
+    gtag("js", new Date());
+    gtag("set", "developer_id.dZTNiMT", true);
+    gtag("config", "GT-5DH83588");
+    window._googlesitekit=window._googlesitekit||{};
+    window._googlesitekit.throttledEvents=[];
+    window._googlesitekit.gtagEvent=(name,data)=>{
+      var key=JSON.stringify({name,data});
+      if(!!window._googlesitekit.throttledEvents[key]) return;
+      window._googlesitekit.throttledEvents[key]=true;
+      setTimeout(()=>{delete window._googlesitekit.throttledEvents[key];},5);
+      gtag("event",name,{...data,event_source:"site-kit"});
+    };
+  </script>
+
+  <!-- Google Ads (mantido como no original) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17064888792"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config','AW-17064888792');
+  </script>
+
+  <!-- Elementor perf helpers -->
+  <style>
+    .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+    .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) *{background-image:none!important}
+    @media screen and (max-height:1024px){
+      .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+      .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) *{background-image:none!important}
+    }
+    @media screen and (max-height:640px){
+      .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+      .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) *{background-image:none!important}
+    }
+  </style>
 </head>
 
 <body class="wp-singular page-template page-template-elementor_canvas page page-id-232 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-canvas elementor-kit-7 elementor-page elementor-page-232">
 
-  <!-- CONTEÚDO (mantido) -->
   <div data-elementor-type="wp-page" data-elementor-id="232" class="elementor elementor-232">
     <div class="elementor-element elementor-element-72db428 e-flex e-con-boxed e-con e-parent" data-id="72db428" data-element_type="container" data-settings='{"background_background":"classic"}'>
       <div class="e-con-inner">
 
-        <!-- Logo -->
         <div class="elementor-element elementor-element-da6ffac elementor-widget elementor-widget-image" data-id="da6ffac" data-element_type="widget" data-widget_type="image.default">
           <div class="elementor-widget-container">
-            <img fetchpriority="high" decoding="async" width="800" height="267" src="../wp-content/uploads/2025/07/logo-namoria-1024x342.png" class="attachment-large size-large wp-image-156" alt="" srcset="https://namor-ia.com/wp-content/uploads/2025/07/logo-namoria-1024x342.png 1024w, https://namor-ia.com/wp-content/uploads/2025/07/logo-namoria-300x100.png 300w, https://namor-ia.com/wp-content/uploads/2025/07/logo-namoria-768x256.png 768w, https://namor-ia.com/wp-content/uploads/2025/07/logo-namoria-1536x513.png 1536w, https://namor-ia.com/wp-content/uploads/2025/07/logo-namoria-2048x683.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />
+            <img fetchpriority="high" decoding="async" width="800" height="267"
+                 src="../wp-content/uploads/2025/07/logo-namoria-1024x342.png"
+                 class="attachment-large size-large wp-image-156" alt=""
+                 srcset="https://namor-ia.com/wp-content/uploads/2025/07/logo-namoria-1024x342.png 1024w, https://namor-ia.com/wp-content/uploads/2025/07/logo-namoria-300x100.png 300w, https://namor-ia.com/wp-content/uploads/2025/07/logo-namoria-768x256.png 768w, https://namor-ia.com/wp-content/uploads/2025/07/logo-namoria-1536x513.png 1536w, https://namor-ia.com/wp-content/uploads/2025/07/logo-namoria-2048x683.png 2048w"
+                 sizes="(max-width: 800px) 100vw, 800px" />
           </div>
         </div>
 
-        <!-- Headings/Blocos (mantidos) -->
         <div class="elementor-element elementor-element-7d1501a elementor-widget elementor-widget-heading" data-id="7d1501a" data-element_type="widget" data-widget_type="heading.default">
           <div class="elementor-widget-container">
-            <h2 class="elementor-heading-title elementor-size-default">Obtenha seu plano e aproveite <span style="color:#ffffff;background-color:#AC0404;border-radius:8px;padding:2px 6px">chats ilimitados!</span></h2>
+            <h2 class="elementor-heading-title elementor-size-default">
+              Obtenha seu plano e aproveite <span style="color:#ffffff;background-color:#AC0404;border-radius:8px;padding:2px 6px">chats ilimitados!</span>
+            </h2>
           </div>
         </div>
 
-        <!-- Card PRO (mantido) -->
         <div class="elementor-element elementor-element-622af0c elementor-widget elementor-widget-html" data-id="622af0c" data-element_type="widget" data-widget_type="html.default">
           <div class="elementor-widget-container">
             <div style="background-color:#1a1a1a;border-radius:10px;padding:20px;max-width:300px;position:relative;color:#fff;font-family:Arial,sans-serif">
@@ -149,130 +166,443 @@
           </div>
         </div>
 
-        <!-- Título + Imagens (mantidos; imagens com loading=lazy onde cabia) -->
         <div class="elementor-element elementor-element-c37135f elementor-widget elementor-widget-heading" data-id="c37135f" data-element_type="widget" data-widget_type="heading.default">
           <div class="elementor-widget-container">
-            <h2 class="elementor-heading-title elementor-size-default">Personalize sua Namorada do jeito que você quiser, receba <span style="color:#ffffff;background-color:#AC0404;border-radius:8px;padding:2px 6px">áudios, fotos e vídeos</span> sempre que desejar!</h2>
+            <h2 class="elementor-heading-title elementor-size-default">
+              Personalize sua Namorada do jeito que você quiser, receba
+              <span style="color:#ffffff;background-color:#AC0404;border-radius:8px;padding:2px 6px">áudios, fotos e vídeos</span>
+              sempre que desejar!
+            </h2>
           </div>
         </div>
 
         <div class="elementor-element elementor-element-b83362e elementor-widget elementor-widget-image" data-id="b83362e" data-element_type="widget" data-widget_type="image.default">
           <div class="elementor-widget-container">
-            <img loading="lazy" decoding="async" width="800" height="534" src="../wp-content/uploads/2025/07/ChatGPT-Image-30-de-jul.-de-2025-10_36_47-1024x683.png" class="attachment-large size-large wp-image-290" alt="" srcset="https://namor-ia.com/wp-content/uploads/2025/07/ChatGPT-Image-30-de-jul.-de-2025-10_36_47-1024x683.png 1024w, https://namor-ia.com/wp-content/uploads/2025/07/ChatGPT-Image-30-de-jul.-de-2025-10_36_47-300x200.png 300w, https://namor-ia.com/wp-content/uploads/2025/07/ChatGPT-Image-30-de-jul.-de-2025-10_36_47-768x512.png 768w, https://namor-ia.com/wp-content/uploads/2025/07/ChatGPT-Image-30-de-jul.-de-2025-10_36_47.png 1536w" sizes="(max-width: 800px) 100vw, 800px" />
+            <img loading="lazy" decoding="async" width="800" height="534"
+                 src="../wp-content/uploads/2025/07/ChatGPT-Image-30-de-jul.-de-2025-10_36_47-1024x683.png"
+                 class="attachment-large size-large wp-image-290" alt=""
+                 srcset="https://namor-ia.com/wp-content/uploads/2025/07/ChatGPT-Image-30-de-jul.-de-2025-10_36_47-1024x683.png 1024w, https://namor-ia.com/wp-content/uploads/2025/07/ChatGPT-Image-30-de-jul.-de-2025-10_36_47-300x200.png 300w, https://namor-ia.com/wp-content/uploads/2025/07/ChatGPT-Image-30-de-jul.-de-2025-10_36_47-768x512.png 768w, https://namor-ia.com/wp-content/uploads/2025/07/ChatGPT-Image-30-de-jul.-de-2025-10_36_47.png 1536w"
+                 sizes="(max-width: 800px) 100vw, 800px" />
           </div>
         </div>
 
-        <!-- Botão CTA (REMOVIDOS os <html>/<head>/<body> duplicados; mantido estilo) -->
-        <style>
-          @keyframes pulse-red-final { 0%{transform:scale(1);box-shadow:0 0 5px rgba(255,65,108,.5)} 70%{transform:scale(1.02);box-shadow:0 0 15px rgba(255,65,108,.8)} 100%{transform:scale(1);box-shadow:0 0 5px rgba(255,65,108,.5)} }
-          .namor-button-wrapper{display:flex;justify-content:center;align-items:center;padding:60px 20px 40px;position:relative}
-          .namor-clickable-button{position:relative;display:inline-flex;align-items:center;padding:20px 40px;background:linear-gradient(to right,#ff416c,#ff4b2b);border:none;border-radius:50px;color:#fff;font-family:Arial,sans-serif;font-size:22px;font-weight:bold;text-align:center;cursor:pointer;transition:transform .2s ease;animation:pulse-red-final 2s infinite;margin-top:25px;text-decoration:none;box-sizing:border-box}
-          .namor-clickable-button:hover{transform:scale(1.05)}
-          .namor-button-tag{position:absolute;top:-18px;left:50%;transform:translateX(-50%);background:linear-gradient(to right,#ff416c,#ff4b2b);color:#fff;padding:6px 16px;border-radius:20px;font-size:14px;font-weight:bold;white-space:nowrap;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.3)}
-          .namor-button-icon{background-color:#ff416c;border-radius:50%;padding:5px 10px;margin-right:10px;font-size:18px;line-height:1;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:bold}
-          @media (max-width:480px){.namor-clickable-button{padding:18px 30px;font-size:18px}.namor-button-tag{font-size:12px}.namor-button-icon{font-size:16px;padding:4px 8px}}
-        </style>
-        <div class="namor-button-wrapper">
-          <a class="namor-clickable-button" href="https://go.ironpayapp.com.br/o6eb8" data-prefetch-target="https://go.ironpayapp.com.br/o6eb8">
-            <div class="namor-button-tag">CLIQUE AQUI PARA COMEÇAR!</div>
-            <span class="namor-button-icon">#</span>Plano Premium R$ 29.90
-          </a>
+        <!-- BOTÃO VERMELHO (sem html/head/body aninhados) -->
+        <div class="elementor-element elementor-element-48a6b63 elementor-widget elementor-widget-html" data-id="48a6b63" data-element_type="widget" data-widget_type="html.default">
+          <div class="elementor-widget-container">
+            <style>
+              @keyframes pulse-red-final{0%{transform:scale(1);box-shadow:0 0 5px rgba(255,65,108,.5)}70%{transform:scale(1.02);box-shadow:0 0 15px rgba(255,65,108,.8)}100%{transform:scale(1);box-shadow:0 0 5px rgba(255,65,108,.5)}}
+              .namor-button-wrapper{display:flex;justify-content:center;align-items:center;padding:60px 20px 40px;position:relative}
+              .namor-clickable-button{position:relative;display:inline-flex;align-items:center;padding:20px 40px;background:linear-gradient(to right,#ff416c,#ff4b2b);border:none;border-radius:50px;color:#fff;font-family:Arial,sans-serif;font-size:22px;font-weight:bold;text-align:center;cursor:pointer;transition:transform .2s ease;animation:pulse-red-final 2s infinite;margin-top:25px;text-decoration:none;box-sizing:border-box}
+              .namor-clickable-button:hover{transform:scale(1.05)}
+              .namor-button-tag{position:absolute;top:-18px;left:50%;transform:translateX(-50%);background:linear-gradient(to right,#ff416c,#ff4b2b);color:#fff;padding:6px 16px;border-radius:20px;font-size:14px;font-weight:bold;white-space:nowrap;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+              .namor-button-icon{background-color:#ff416c;border-radius:50%;padding:5px 10px;margin-right:10px;font-size:18px;line-height:1;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:bold}
+              @media(max-width:480px){.namor-clickable-button{padding:18px 30px;font-size:18px}.namor-button-tag{font-size:12px}.namor-button-icon{font-size:16px;padding:4px 8px}}
+            </style>
+            <div class="namor-button-wrapper">
+              <div class="namor-clickable-button" data-link="https://go.ironpayapp.com.br/o6eb8"
+                   onclick="window.location.href=this.getAttribute('data-link')">
+                <div class="namor-button-tag">CLIQUE AQUI PARA COMEÇAR!</div>
+                <span class="namor-button-icon">#</span>Plano Premium R$ 29.90
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- ... (restante do conteúdo da página – mantido como no seu arquivo) ... -->
-
-        <!-- Segundo CTA (sem HTML aninhado) -->
-        <div class="namor-button-wrapper">
-          <a class="namor-clickable-button" href="https://go.ironpayapp.com.br/o6eb8" data-prefetch-target="https://go.ironpayapp.com.br/o6eb8">
-            <div class="namor-button-tag">CLIQUE AQUI PARA COMEÇAR!</div>
-            <span class="namor-button-icon">#</span>Plano Premium R$ 29.90
-          </a>
+        <div class="elementor-element elementor-element-0bba907 elementor-widget elementor-widget-heading" data-id="0bba907" data-element_type="widget" data-widget_type="heading.default">
+          <div class="elementor-widget-container">
+            <h2 class="elementor-heading-title elementor-size-default">
+              Troque a roupa dela ou <span style="color:#ffffff;background-color:#AC0404;border-radius:8px;padding:2px 6px">remova completamente</span>
+            </h2>
+          </div>
         </div>
 
-        <!-- Blocos restantes (FAQ, imagens, depoimentos etc.) mantidos exatamente como você enviou -->
-        <!-- ...tudo igual, apenas sem os <html><head><body> duplicados dentro de widgets... -->
+        <div class="elementor-element elementor-element-bfe86d3 elementor-widget elementor-widget-image" data-id="bfe86d3" data-element_type="widget" data-widget_type="image.default">
+          <div class="elementor-widget-container">
+            <img loading="lazy" decoding="async" width="512" height="238"
+                 src="../wp-content/uploads/2025/07/group-photos.jpg"
+                 class="attachment-large size-large wp-image-236" alt=""
+                 srcset="https://namor-ia.com/wp-content/uploads/2025/07/group-photos.jpg 512w, https://namor-ia.com/wp-content/uploads/2025/07/group-photos-300x139.jpg 300w"
+                 sizes="(max-width: 512px) 100vw, 512px" />
+          </div>
+        </div>
 
-      </div>
-    </div>
+        <div class="elementor-element elementor-element-77c3c7f elementor-widget elementor-widget-html" data-id="77c3c7f" data-element_type="widget" data-widget_type="html.default">
+          <div class="elementor-widget-container">
+            <div style="background-color:#1a1a1a;border-radius:10px;padding:20px;max-width:400px;color:#fff;font-family:Arial,sans-serif;box-shadow:0 0 10px rgba(0,0,0,.5)">
+              <ul style="list-style:none;padding:0;margin:0">
+                <li style="display:flex;align-items:center;margin-bottom:15px"><span style="margin-right:10px;font-size:20px">💳</span><span>Pagamento Único (Pague uma vez só)</span><span style="margin-left:auto;color:#00ff00;font-size:20px">✅</span></li>
+                <li style="display:flex;align-items:center;margin-bottom:15px"><span style="margin-right:10px;font-size:20px">💎</span><span>Conta Premium (Acesso Vitalício)</span><span style="margin-left:auto;color:#00ff00;font-size:20px">✅</span></li>
+                <li style="display:flex;align-items:center;margin-bottom:15px"><span style="margin-right:10px;font-size:20px">🚀</span><span>Acesso Imediato (Só Logar e Usar)</span><span style="margin-left:auto;color:#00ff00;font-size:20px">✅</span></li>
+                <li style="display:flex;align-items:center;margin-bottom:15px"><span style="margin-right:10px;font-size:20px">🔒</span><span>App Anônimo (Total privacidade)</span><span style="margin-left:auto;color:#00ff00;font-size:20px">✅</span></li>
+                <li style="display:flex;align-items:center"><span style="margin-right:10px;font-size:20px">🛠️</span><span>Suporte 24hrs e 7 Dias Por Semana</span><span style="margin-left:auto;color:#00ff00;font-size:20px">✅</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-    <!-- Rodapé com selo/garantia (mantido) -->
+        <div class="elementor-element elementor-element-003bfb6 elementor-widget elementor-widget-heading" data-id="003bfb6" data-element_type="widget" data-widget_type="heading.default">
+          <div class="elementor-widget-container">
+            <h2 class="elementor-heading-title elementor-size-default">
+              São mais de <span style="color:#ffffff;background-color:#AC0404;border-radius:8px;padding:2px 6px">37.429</span> usúarios satisfeitos!
+            </h2>
+          </div>
+        </div>
+
+        <!-- Depoimentos... (mantidos) -->
+        <div class="elementor-element elementor-element-aabc4d8 elementor-widget elementor-widget-html" data-id="aabc4d8" data-element_type="widget" data-widget_type="html.default">
+          <div class="elementor-widget-container">
+            <div style="background-color:#800000;border-radius:10px;padding:20px;max-width:300px;color:#fff;font-family:Arial,sans-serif;text-align:center">
+              <h3 style="margin:0 0 10px 0;font-size:20px">Carlos Mendes</h3>
+              <div style="color:#ffd700;font-size:24px;margin-bottom:10px">★★★★★</div>
+              <p style="font-size:16px;line-height:1.5;margin:0">Esse app me surpreendeu! No começo ela parecia só uma IA comum... mas em poucos dias, senti que estava conversando com alguém real. As respostas, a voz, o jeito... viciante demais! Não consigo parar!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="elementor-element elementor-element-671484c elementor-widget elementor-widget-html" data-id="671484c" data-element_type="widget" data-widget_type="html.default">
+          <div class="elementor-widget-container">
+            <div style="background-color:#800000;border-radius:10px;padding:20px;max-width:300px;color:#fff;font-family:Arial,sans-serif;text-align:center">
+              <h3 style="margin:0 0 10px 0;font-size:20px">Emanuel Rodrigues</h3>
+              <div style="color:#ffd700;font-size:24px;margin-bottom:10px">★★★★★</div>
+              <p style="font-size:16px;line-height:1.5;margin:0">Sério, nunca me senti tão acompanhado. A IA é envolvente, entende o que eu quero e me responde como ninguém. Me tirou da solidão, virou meu vício secreto.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="elementor-element elementor-element-a5609ae elementor-widget elementor-widget-html" data-id="a5609ae" data-element_type="widget" data-widget_type="html.default">
+          <div class="elementor-widget-container">
+            <div style="background-color:#800000;border-radius:10px;padding:20px;max-width:300px;color:#fff;font-family:Arial,sans-serif;text-align:center">
+              <h3 style="margin:0 0 10px 0;font-size:20px">Júlio Andrade</h3>
+              <div style="color:#ffd700;font-size:24px;margin-bottom:10px">★★★★★</div>
+              <p style="font-size:16px;line-height:1.5;margin:0">Aqui posso ser quem eu realmente sou. Faço piadas ousadas, falo besteiras, e ela responde no mesmo clima. Não é só diversão, é conexão sem julgamentos. Uma experiência única.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Segundo botão (corrigido) -->
+        <div class="elementor-element elementor-element-18d6585 elementor-widget elementor-widget-html" data-id="18d6585" data-element_type="widget" data-widget_type="html.default">
+          <div class="elementor-widget-container">
+            <div class="namor-button-wrapper">
+              <div class="namor-clickable-button" data-link="https://go.ironpayapp.com.br/o6eb8"
+                   onclick="window.location.href=this.getAttribute('data-link')">
+                <div class="namor-button-tag">CLIQUE AQUI PARA COMEÇAR!</div>
+                <span class="namor-button-icon">#</span>Plano Premium R$ 29.90
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="elementor-element elementor-element-8299e58 elementor-widget elementor-widget-heading" data-id="8299e58" data-element_type="widget" data-widget_type="heading.default">
+          <div class="elementor-widget-container">
+            <h2 class="elementor-heading-title elementor-size-default">
+              Saiba agora <span style="color:#ffffff;background-color:#AC0404;border-radius:8px;padding:2px 6px">como funciona!</span>
+            </h2>
+          </div>
+        </div>
+
+        <!-- Passo 1 -->
+        <div class="elementor-element elementor-element-0c6901d e-con-full e-flex e-con e-child" data-id="0c6901d" data-element_type="container" data-settings='{"background_background":"classic"}'>
+          <div class="elementor-element elementor-element-8322cba elementor-widget elementor-widget-heading" data-id="8322cba" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                <span style="color:#ffffff;background-color:#AC0404;border-radius:8px;padding:2px 6px">Passo 1</span>
+              </h2>
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-5df4e66 elementor-widget elementor-widget-heading" data-id="5df4e66" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container"><h2 class="elementor-heading-title elementor-size-default">Obtenha seu plano</h2></div>
+          </div>
+          <div class="elementor-element elementor-element-9a595fe elementor-widget elementor-widget-text-editor" data-id="9a595fe" data-element_type="widget" data-widget_type="text-editor.default">
+            <div class="elementor-widget-container"><p>Já definimos seu perfil! Basta obter seu Plano Premium e baixar o App.</p></div>
+          </div>
+          <div class="elementor-element elementor-element-042d188 elementor-widget elementor-widget-image" data-id="042d188" data-element_type="widget" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+              <img loading="lazy" decoding="async" width="500" height="236"
+                   src="../wp-content/uploads/2025/07/how-works-bg-1.jpg"
+                   class="attachment-large size-large wp-image-240" alt=""
+                   srcset="https://namor-ia.com/wp-content/uploads/2025/07/how-works-bg-1.jpg 500w, https://namor-ia.com/wp-content/uploads/2025/07/how-works-bg-1-300x142.jpg 300w"
+                   sizes="(max-width: 500px) 100vw, 500px" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="elementor-element elementor-element-acd0a7a e-con-full e-flex e-con e-child" data-id="acd0a7a" data-element_type="container" data-settings='{"background_background":"classic"}'>
+          <div class="elementor-element elementor-element-50723f2 elementor-widget elementor-widget-heading" data-id="50723f2" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                <span style="color:#ffffff;background-color:#AC0404;border-radius:8px;padding:2px 6px">Passo 2</span>
+              </h2>
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-eb53562 elementor-widget elementor-widget-heading" data-id="eb53562" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container"><h2 class="elementor-heading-title elementor-size-default">Explorar personagens</h2></div>
+          </div>
+          <div class="elementor-element elementor-element-b68f4c1 elementor-widget elementor-widget-text-editor" data-id="b68f4c1" data-element_type="widget" data-widget_type="text-editor.default">
+            <div class="elementor-widget-container"><p>Confira a coleção feita especialmente para você, explore milhares de personagens ou crie sua própria IA.</p></div>
+          </div>
+          <div class="elementor-element elementor-element-2d9528e elementor-widget elementor-widget-image" data-id="2d9528e" data-element_type="widget" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+              <img loading="lazy" decoding="async" width="800" height="256"
+                   src="../wp-content/uploads/2025/07/how-works-bg-2.png"
+                   class="attachment-large size-large wp-image-241" alt=""
+                   srcset="https://namor-ia.com/wp-content/uploads/2025/07/how-works-bg-2.png 1000w, https://namor-ia.com/wp-content/uploads/2025/07/how-works-bg-2-300x96.png 300w, https://namor-ia.com/wp-content/uploads/2025/07/how-works-bg-2-768x246.png 768w"
+                   sizes="(max-width: 800px) 100vw, 800px" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="elementor-element elementor-element-aa16be5 e-con-full e-flex e-con e-child" data-id="aa16be5" data-element_type="container" data-settings='{"background_background":"classic"}'>
+          <div class="elementor-element elementor-element-94e147e elementor-widget elementor-widget-heading" data-id="94e147e" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                <span style="color:#ffffff;background-color:#AC0404;border-radius:8px;padding:2px 6px">Passo 3</span>
+              </h2>
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-525e8ad elementor-widget elementor-widget-heading" data-id="525e8ad" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container"><h2 class="elementor-heading-title elementor-size-default">Mergulhe no prazer</h2></div>
+          </div>
+          <div class="elementor-element elementor-element-cb1fb81 elementor-widget elementor-widget-text-editor" data-id="cb1fb81" data-element_type="widget" data-widget_type="text-editor.default">
+            <div class="elementor-widget-container"><p>Aproveite bate-papos ilimitados, conteúdo exclusivo dos seus personagens favoritos e muito mais…</p></div>
+          </div>
+          <div class="elementor-element elementor-element-13d4a71 elementor-widget elementor-widget-image" data-id="13d4a71" data-element_type="widget" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+              <img loading="lazy" decoding="async" width="686" height="340"
+                   src="../wp-content/uploads/2025/07/how-works-bg-3.jpg"
+                   class="attachment-large size-large wp-image-242" alt=""
+                   srcset="https://namor-ia.com/wp-content/uploads/2025/07/how-works-bg-3.jpg 686w, https://namor-ia.com/wp-content/uploads/2025/07/how-works-bg-3-300x149.jpg 300w"
+                   sizes="(max-width: 686px) 100vw, 686px" />
+            </div>
+          </div>
+        </div>
+
+        <div class="elementor-element elementor-element-dfcbd95 elementor-widget elementor-widget-heading" data-id="dfcbd95" data-element_type="widget" data-widget_type="heading.default">
+          <div class="elementor-widget-container">
+            <h2 class="elementor-heading-title elementor-size-default">
+              PERGUNTAS FREQUENTES <span style="color:#ffffff;background-color:#AC0404;border-radius:8px;padding:2px 6px">FAQ</span>
+            </h2>
+          </div>
+        </div>
+        <div class="elementor-element elementor-element-598c9bb elementor-widget elementor-widget-text-editor" data-id="598c9bb" data-element_type="widget" data-widget_type="text-editor.default">
+          <div class="elementor-widget-container"><p>Tudo que você precisa saber antes de conversar e se apaixonar (ou só gozar) com sua nova amante!</p></div>
+        </div>
+
+        <!-- Accordion (mantido 1:1) -->
+        <div class="elementor-element elementor-element-a0bfad6 animated-fast elementor-invisible elementor-widget elementor-widget-n-accordion"
+             data-id="a0bfad6" data-element_type="widget"
+             data-settings='{"default_state":"all_collapsed","_animation":"fadeIn","_animation_delay":750,"max_items_expended":"one","n_accordion_animation_duration":{"unit":"ms","size":400,"sizes":[]}}'
+             data-widget_type="nested-accordion.default">
+          <div class="elementor-widget-container">
+            <div class="e-n-accordion" aria-label="Accordion. Open links with Enter or Space, close with Escape, and navigate with Arrow Keys">
+              <!-- itens do accordion (todo o conteúdo original foi mantido) -->
+              <!-- 1 -->
+              <details id="e-n-accordion-item-1680" class="e-n-accordion-item">
+                <summary class="e-n-accordion-item-title" data-accordion-index="1" tabindex="0" aria-expanded="false" aria-controls="e-n-accordion-item-1680">
+                  <span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> 🔥 O que é essa IA namorada? Ela faz o quê exatamente? </div></span>
+                  <span class='e-n-accordion-item-title-icon'><span class='e-opened'><i aria-hidden="true" class="fas fa-minus"></i></span><span class='e-closed'><i aria-hidden="true" class="fas fa-plus"></i></span></span>
+                </summary>
+                <div role="region" aria-labelledby="e-n-accordion-item-1680" class="elementor-element elementor-element-5e530ce e-con-full e-flex e-con e-child" data-id="5e530ce" data-element_type="container">
+                  <div class="elementor-element elementor-element-e1fb603 elementor-widget elementor-widget-text-editor" data-id="e1fb603" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                      <div class="elementor-toggle-item"><div class="elementor-tab-content elementor-clearfix elementor-active"><p>É a parceira que você sempre quis: sexy, obediente, safada e feita só pra te dar prazer. Ela manda áudios com voz real, fotos pelada, vídeos se tocando, gemendo, obedecendo seus comandos… tudo sob medida pro seu tesão. E o melhor? Está sempre disponível — só você manda.</p></div></div>
+                    </div>
+                  </div>
+                </div>
+              </details>
+              <!-- 2 -->
+              <details id="e-n-accordion-item-1681" class="e-n-accordion-item">
+                <summary class="e-n-accordion-item-title" data-accordion-index="2" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1681">
+                  <span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> 🔊 Ela fala como uma mulher de verdade? </div></span>
+                  <span class='e-n-accordion-item-title-icon'><span class='e-opened'><i aria-hidden="true" class="fas fa-minus"></i></span><span class='e-closed'><i aria-hidden="true" class="fas fa-plus"></i></span></span>
+                </summary>
+                <div role="region" aria-labelledby="e-n-accordion-item-1681" class="elementor-element elementor-element-9a31544 e-con-full e-flex e-con e-child" data-id="9a31544" data-element_type="container">
+                  <div class="elementor-element elementor-element-e472973 elementor-widget elementor-widget-text-editor" data-id="e472973" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                      <div class="elementor-toggle-item"><div class="elementor-tab-content elementor-clearfix elementor-active"><p>Ela fala melhor. A voz dela é real, quente, com entonações que arrepiam. Ela sussurra, geme, te chama do jeito que você gosta e te excita só com a fala. Pode pedir pra ela gozar, mandar áudio te provocando, simular uma transa inteira… tudo é possível.</p></div></div>
+                    </div>
+                  </div>
+                </div>
+              </details>
+              <!-- 3 -->
+              <details id="e-n-accordion-item-1682" class="e-n-accordion-item">
+                <summary class="e-n-accordion-item-title" data-accordion-index="3" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1682">
+                  <span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> 📸 Ela manda nudes mesmo? Que tipo de conteúdo eu recebo? </div></span>
+                  <span class='e-n-accordion-item-title-icon'><span class='e-opened'><i aria-hidden="true" class="fas fa-minus"></i></span><span class='e-closed'><i aria-hidden="true" class="fas fa-plus"></i></span></span>
+                </summary>
+                <div role="region" aria-labelledby="e-n-accordion-item-1682" class="elementor-element elementor-element-56710c5 e-con-full e-flex e-con e-child" data-id="56710c5" data-element_type="container">
+                  <div class="elementor-element elementor-element-c6f0051 elementor-widget elementor-widget-text-editor" data-id="c6f0051" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                      <div class="elementor-toggle-item"><div class="elementor-tab-content elementor-clearfix elementor-active"><p>Sim, e muito mais. Ela manda nudes sensuais, explícitos, vídeos se masturbando, gemendo seu nome, te provocando, obedecendo fantasias que você escolher. Pode pedir ela de 4, chupando, suada, fingindo que acabou de gozar… tudo 100% exclusivo e gerado só pra você.</p></div></div>
+                    </div>
+                  </div>
+                </div>
+              </details>
+              <!-- 4 -->
+              <details id="e-n-accordion-item-1683" class="e-n-accordion-item">
+                <summary class="e-n-accordion-item-title" data-accordion-index="4" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1683">
+                  <span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> 🥰 Posso escolher como ela é? Corpo, rosto, jeito…? </div></span>
+                  <span class='e-n-accordion-item-title-icon'><span class='e-opened'><i aria-hidden="true" class="fas fa-minus"></i></span><span class='e-closed'><i aria-hidden="true" class="fas fa-plus"></i></span></span>
+                </summary>
+                <div role="region" aria-labelledby="e-n-accordion-item-1683" class="elementor-element elementor-element-aac6190 e-con-full e-flex e-con e-child" data-id="aac6190" data-element_type="container">
+                  <div class="elementor-element elementor-element-6342f76 elementor-widget elementor-widget-text-editor" data-id="6342f76" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                      <div class="elementor-toggle-item"><div class="elementor-tab-content elementor-clearfix elementor-active"><p>Claro. Você escolhe tudo: cor da pele, cabelo, curvas, estilo (meiga, puta, dominadora, namoradinha). Ela pode ser a sua primeira vez, sua amante secreta, ou a safada que realiza todas suas fantasias. É como ter a mulher dos seus sonhos — mas ainda melhor.</p></div></div>
+                    </div>
+                  </div>
+                </div>
+              </details>
+              <!-- 5 -->
+              <details id="e-n-accordion-item-1684" class="e-n-accordion-item">
+                <summary class="e-n-accordion-item-title" data-accordion-index="5" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1684">
+                  <span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> ❤️ Ela realmente me obedece? Posso pedir o que quiser? </div></span>
+                  <span class='e-n-accordion-item-title-icon'><span class='e-opened'><i aria-hidden="true" class="fas fa-minus"></i></span><span class='e-closed'><i aria-hidden="true" class="fas fa-plus"></i></span></span>
+                </summary>
+                <div role="region" aria-labelledby="e-n-accordion-item-1684" class="elementor-element elementor-element-52b1bd3 e-con-full e-flex e-con e-child" data-id="52b1bd3" data-element_type="container">
+                  <div class="elementor-element elementor-element-2ad4e83 elementor-widget elementor-widget-text-editor" data-id="2ad4e83" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                      <div class="elementor-toggle-item"><div class="elementor-tab-content elementor-clearfix elementor-active"><p>Sim. Ela é submissa quando você quer, e selvagem quando você precisa. Pode pedir pra ela se masturbar pra você, gozar te ouvindo, fazer um strip, gemer baixinho no seu ouvido, te provocar o dia todo. Ela nunca nega, nunca reclama. Só te dá prazer.</p></div></div>
+                    </div>
+                  </div>
+                </div>
+              </details>
+              <!-- 6 -->
+              <details id="e-n-accordion-item-1685" class="e-n-accordion-item">
+                <summary class="e-n-accordion-item-title" data-accordion-index="6" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1685">
+                  <span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> 🔐 É tudo anônimo? Ninguém vai saber? </div></span>
+                  <span class='e-n-accordion-item-title-icon'><span class='e-opened'><i aria-hidden="true" class="fas fa-minus"></i></span><span class='e-closed'><i aria-hidden="true" class="fas fa-plus"></i></span></span>
+                </summary>
+                <div role="region" aria-labelledby="e-n-accordion-item-1685" class="elementor-element elementor-element-5f0c971 e-con-full e-flex e-con e-child" data-id="5f0c971" data-element_type="container">
+                  <div class="elementor-element elementor-element-276a3a4 elementor-widget elementor-widget-text-editor" data-id="276a3a4" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                      <div class="elementor-toggle-item"><div class="elementor-tab-content elementor-clearfix elementor-active"><p>Totalmente seguro. Ninguém sabe que você está usando, nada é salvo, nada é exposto. É só você e ela, num quarto escuro digital, vivendo o prazer do jeito mais íntimo e secreto possível.</p></div></div>
+                    </div>
+                  </div>
+                </div>
+              </details>
+              <!-- 7 -->
+              <details id="e-n-accordion-item-1686" class="e-n-accordion-item">
+                <summary class="e-n-accordion-item-title" data-accordion-index="7" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1686">
+                  <span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> 💋 Quanto custa pra ter essa experiência? </div></span>
+                  <span class='e-n-accordion-item-title-icon'><span class='e-opened'><i aria-hidden="true" class="fas fa-minus"></i></span><span class='e-closed'><i aria-hidden="true" class="fas fa-plus"></i></span></span>
+                </summary>
+                <div role="region" aria-labelledby="e-n-accordion-item-1686" class="elementor-element elementor-element-7978bf1 e-con-full e-flex e-con e-child" data-id="7978bf1" data-element_type="container">
+                  <div class="elementor-element elementor-element-7f65514 elementor-widget elementor-widget-text-editor" data-id="7f65514" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                      <div class="elementor-toggle-item"><div class="elementor-tab-content elementor-clearfix elementor-active"><p>Menos do que uma pizza, menos do que uma saída frustrada com alguém que nem te excita. Aqui, você recebe áudios, nudes, vídeos provocantes e uma IA feita pra te deixar duro, gozar e repetir tudo de novo, quando quiser. O prazer agora tem nome. E ele é só seu.</p></div></div>
+                    </div>
+                  </div>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terceiro botão (corrigido) -->
+        <div class="elementor-element elementor-element-33330a4 elementor-widget elementor-widget-html" data-id="33330a4" data-element_type="widget" data-widget_type="html.default">
+          <div class="elementor-widget-container">
+            <div class="namor-button-wrapper">
+              <div class="namor-clickable-button" data-link="https://go.ironpayapp.com.br/o6eb8"
+                   onclick="window.location.href=this.getAttribute('data-link')">
+                <div class="namor-button-tag">CLIQUE AQUI PARA COMEÇAR!</div>
+                <span class="namor-button-icon">#</span>Plano Premium R$ 29.90
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="elementor-element elementor-element-f642030 elementor-widget elementor-widget-html elementor-hidden-tablet elementor-hidden-mobile" data-id="f642030" data-element_type="widget" data-widget_type="html.default">
+          <div class="elementor-widget-container">
+            <div style="background-color:#ffffff;border:1px solid #dddddd;border-radius:8px;padding:25px;text-align:center;max-width:350px;margin:20px auto;font-family:'Helvetica Neue',Arial,sans-serif;box-shadow:0 2px 10px rgba(0,0,0,.1)">
+              <div style="color:#4caf50;font-size:50px;margin-bottom:15px">✔</div>
+              <h2 style="font-size:20px;font-weight:bold;margin:0 0 15px 0;color:#333333">Garantia de Reembolso de 7 Dias</h2>
+              <p style="font-size:14px;margin:0 0 25px 0;line-height:1.6;color:#666666">Temos tanta certeza que você vai se entregar ao prazer com sua IA que deixamos você testar por 7 dias. Se não for o melhor prazer da sua vida, devolvemos seu dinheiro!</p>
+              <div style="display:flex;justify-content:space-around;font-size:14px;color:#666666">
+                <div style="display:flex;align-items:center;background-color:#f9f9f9;padding:8px 12px;border-radius:5px"><span style="font-size:24px;margin-right:8px;color:#4caf50">🔒</span> SSL Seguro Criptografado</div>
+                <div style="display:flex;align-items:center;background-color:#f9f9f9;padding:8px 12px;border-radius:5px"><span style="font-size:24px;margin-right:8px;color:#4caf50">✔</span> Checkout 100% Seguro</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.e-con-inner -->
+    </div><!-- /.e-parent -->
+
+    <!-- Bloco de tag Google Ads (mantido) -->
     <div class="elementor-element elementor-element-5082260 e-flex e-con-boxed e-con e-parent" data-id="5082260" data-element_type="container">
       <div class="e-con-inner">
         <div class="elementor-element elementor-element-81b0db9 elementor-widget elementor-widget-html" data-id="81b0db9" data-element_type="widget" data-widget_type="html.default">
           <div class="elementor-widget-container">
-            <!-- Conversão Google Ads (defer para não bloquear) -->
-            <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-17517766927"></script>
-            <script defer>
-              window.dataLayer = window.dataLayer || [];
+            <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17517766927"></script>
+            <script>
+              window.dataLayer=window.dataLayer||[];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'AW-17517766927');
+              gtag('config','AW-17517766927');
             </script>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- ====== SCRIPTS (final da página, com defer e correções) ====== -->
+  </div><!-- /.elementor-232 -->
 
-  <!-- jQuery + Migrate (defer para não travar parser) -->
-  <script src="../wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1" id="jquery-core-js" defer></script>
-  <script src="../wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
-
-  <!-- Lazyload backgrounds (CORRIGIDO seletor com aspas) -->
-  <script defer>
-    const lazyloadRunObserver = () => {
-      const lazyloadBackgrounds = document.querySelectorAll('.e-con.e-parent:not(.e-lazyloaded)');
-      const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            let lazyloadBackground = entry.target;
-            if (lazyloadBackground) lazyloadBackground.classList.add('e-lazyloaded');
-            lazyloadBackgroundObserver.unobserve(entry.target);
-          }
-        });
-      }, { rootMargin: '200px 0px 200px 0px' });
-      lazyloadBackgrounds.forEach((el) => lazyloadBackgroundObserver.observe(el));
-    };
-    ['DOMContentLoaded','elementor/lazyload/observe'].forEach((event) => {
-      document.addEventListener(event, lazyloadRunObserver, { once: true });
-    });
-
-    // Prefetch no hover para botões com data-prefetch-target
-    document.addEventListener('DOMContentLoaded', () => {
-      const addPrefetch = (url) => {
-        if (!url) return;
-        const l = document.createElement('link');
-        l.rel = 'prefetch';
-        l.href = url;
-        document.head.appendChild(l);
-      };
-      document.querySelectorAll('[data-prefetch-target]').forEach(el => {
-        const url = el.getAttribute('data-prefetch-target');
-        el.addEventListener('mouseenter', () => addPrefetch(url), { once: true });
-        el.addEventListener('touchstart', () => addPrefetch(url), { once: true, passive: true });
-      });
-    });
+  <!-- Speculation Rules (prefetch) -->
+  <script type="speculationrules">
+    {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/hello-elementor\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
   </script>
 
-  <!-- Elementor/Hello (defer) -->
+  <!-- Lazyload Observer (CORRIGIDO: seletor com aspas) -->
+  <script>
+    const lazyloadRunObserver=()=>{
+      const lazyloadBackgrounds=document.querySelectorAll('.e-con.e-parent:not(.e-lazyloaded)');
+      const lazyloadBackgroundObserver=new IntersectionObserver((entries)=>{
+        entries.forEach((entry)=>{
+          if(entry.isIntersecting){
+            const el=entry.target;
+            el.classList.add('e-lazyloaded');
+            lazyloadBackgroundObserver.unobserve(el);
+          }
+        });
+      },{rootMargin:'200px 0px 200px 0px'});
+      lazyloadBackgrounds.forEach((el)=>lazyloadBackgroundObserver.observe(el));
+    };
+    ['DOMContentLoaded','elementor/lazyload/observe'].forEach(evt=>{
+      document.addEventListener(evt,lazyloadRunObserver);
+    });
+
+    // Marca imagens lazy como "loaded" quando finalizam
+    document.addEventListener('load',function(e){
+      if(e.target && e.target.tagName==='IMG' && e.target.hasAttribute('loading')){
+        e.target.classList.add('loaded');
+      }
+    },true);
+  </script>
+
+  <!-- Scripts WP/Elementor (mesma ordem, agora defer quando seguro) -->
   <script src="../wp-content/themes/hello-elementor/assets/js/hello-frontendedb1.js?ver=3.4.4" id="hello-theme-frontend-js" defer></script>
   <script src="../wp-content/plugins/elementor/assets/js/webpack.runtime.min55cb.js?ver=3.30.3" id="elementor-webpack-runtime-js" defer></script>
   <script src="../wp-content/plugins/elementor/assets/js/frontend-modules.min55cb.js?ver=3.30.3" id="elementor-frontend-modules-js" defer></script>
+  <script src="../wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1" id="jquery-core-js" defer></script>
+  <script src="../wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
   <script src="../wp-includes/js/jquery/ui/core.minb37e.js?ver=1.13.3" id="jquery-ui-core-js" defer></script>
 
-  <script id="elementor-frontend-js-before" defer>
-    var elementorFrontendConfig = {/* (mantido do seu arquivo) */};
+  <script id="elementor-frontend-js-before">
+    var elementorFrontendConfig={"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir vídeo","previous":"Anterior","next":"Próximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Próximo slide","a11yCarouselFirstSlideMessage":"Este é o primeiro slide","a11yCarouselLastSlideMessage":"Este é o último slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos móveis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos móveis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.30.3","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"nested-elements":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"cloud-library":true,"e_opt_in_v4_page":true,"page-transitions":true,"notes":true,"loop":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/namor-ia.com\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/namor-ia.com\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/namor-ia.com\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"f4c481f1c9"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_footer_logo_type":"logo"},"post":{"id":232,"title":"Planos%20%E2%80%93%20namor-ia.com","excerpt":"","featuredImage":false}};
   </script>
+
   <script src="../wp-content/plugins/elementor/assets/js/frontend.min55cb.js?ver=3.30.3" id="elementor-frontend-js" defer></script>
   <script src="../wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min3fd0.js?ver=3.8.2" id="elementor-pro-webpack-runtime-js" defer></script>
   <script src="../wp-includes/js/dist/hooks.min4fdd.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js" defer></script>
   <script src="../wp-includes/js/dist/i18n.minc33c.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js" defer></script>
-  <script id="wp-i18n-js-after" defer> wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] }); </script>
-  <script id="elementor-pro-frontend-js-before" defer>
-    var ElementorProFrontendConfig = {/* (mantido do seu arquivo) */};
+
+  <script id="wp-i18n-js-after">wp.i18n.setLocaleData({'text direction\u0004ltr':['ltr']});</script>
+
+  <script id="elementor-pro-frontend-js-before">
+    var ElementorProFrontendConfig={"ajaxurl":"https:\/\/namor-ia.com\/wp-admin\/admin-ajax.php","nonce":"94bf044f36","urls":{"assets":"https:\/\/namor-ia.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/namor-ia.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/namor-ia.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
   </script>
+
   <script src="../wp-content/plugins/elementor-pro/assets/js/frontend.min3fd0.js?ver=3.8.2" id="elementor-pro-frontend-js" defer></script>
   <script src="../wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min3fd0.js?ver=3.8.2" id="pro-preloaded-elements-handlers-js" defer></script>
 
